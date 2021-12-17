@@ -10,7 +10,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-width: 640px;
+  min-width: 400px;
   min-height: 100vh;
   margin: 0;
   font-family: "Verdana", "Tahoma", sans-serif;
