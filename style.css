@@ -14,7 +14,7 @@
   min-height: 100vh;
   margin: 0;
   font-family: "Verdana", "Tahoma", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   color: #333333;
   background-color: #eae9f2;
@@ -39,19 +39,18 @@ a:focus {
 }
 
 .page-header {
-  margin-bottom: 30px;
-  color: #ffffff;
-  background-color: #2a5429;
-  box-shadow: 10px 11px 2px rgb(0 0 0 / 20%);
+  margin-bottom: 40px;
+  color: #333333;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .page-header .container {
-  padding-top: 60px;
-  padding-bottom: 80px;
-  background-image: url("img/hat santa claus.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("img/comfy.jpg");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 225px 250px;
+  background-position: center;
 }
 
 .page-header a {
@@ -82,10 +81,10 @@ a:focus {
  }
 
 .about-content {
-    width: 560px;
+    width: 410px;
     font-size: 14px;
     line-height: 24px;
-    border-radius: 100%;
+    border-radius: 15%;
 }
 
 .about-content p {
@@ -93,8 +92,6 @@ a:focus {
    margin-bottom: 12px;
    padding: 0;
  }
-
-p {}
 
 .status {
   margin-bottom: 32px;
