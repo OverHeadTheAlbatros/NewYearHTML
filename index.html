@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="ru">
 <head>
     <script>
@@ -15,10 +15,10 @@
                 var secPerHours = secPerDay - remainingHours * 3600; // Остаток от вычтенных из всех секунд часов
                 var remainingMins = (parseInt(secPerHours / 60)); // кол-во минут
                 if (remainingMins < 10) { remainingMins = "0" + remainingMins }; // проверка на два знака (Пример: 09:05 вместо 9:5)
-                var remainingSecs = secPerHours - remainingMins * 60; // 
+                var remainingSecs = secPerHours - remainingMins * 60; //
                 if (remainingSecs < 10) { remainingSecs = "0" + remainingSecs }; // проверка на два знака (Пример: 09: 05 вместо 9: 5)
                 /*
-                
+
                 Робит! Не трогать
 
                 */
@@ -33,54 +33,418 @@
     <title>Новый год - пора чудес!</title>
 </head>
 <body class="page">
-  <header class="page-header">
-    <div class="container">
-      <h1 class="page-title">Сайт Деда Мороза</h1>
-      <p><i>Напиши письмо деду морозу:</i><br><a href="mailto:Dima.Plenkin.03@mail.ru">Написать деду морозу</a></p>
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Сайт Деда Мороза</h1>
+            <p><i>Напиши письмо деду морозу:</i><br><a href="mailto:Dima.Plenkin.03@mail.ru">Написать</a></p>
+        </div>
+    </header>
+    <main>
+        <section class="about container">
+            <h2 class="section-title">С новым, 2022 годом!</h2>
+            <div class="about-content">
+                <style>
+                    .lefting {
+                        float: left;
+                        margin: 7px 7px 7px 0;
+                    }
+                </style>
+                <p>
+                    <img src="img/DedMorozKrasota.jpg" class="about-image lefting"> Обычай отмечать Новый год в ночь с 31 декабря на 1 января появился в России при Петре I.
+                    До этого, с принятия христианства в 988 году, его отмечали 1 марта, а в 1492 году датой начала года закрепили 1 сентября. Тогда летоисчисление шло
+                    по византийской системе, «от сотворения мира» — то есть от 5508 года до нашей эры. В «первый день года» на соборной площади Московского Кремля проходила церемония
+                    «О начатии нового лета» и церковная служба «На летопровождение» при участии патриарха, царя, знати.
+                </p>
+                <p>
+                    В конце декабря 1699 года Петр I издал именной указ № 1736
+                    «О праздновании Нового года». Он ввел новую систему исчисления — от Рождества Христова,
+                    и 7208 год «от сотворения мира» стал 1700 годом. А Новый год указ предписывал праздновать
+                    по образу и подобию европейских держав, которые впечатлили царя во время Великого посольства в зарубежные страны.
+                </p>
+            </div>
+        </section>
+        <section class="status container">
+            <h2 class="section-title">Мой статус</h2>
+            <p>#яжверстальщик!</p>
+        </section>
+        <section class="contacts container">
+            <h2 class="section-title">По предложениям</h2>
+            <p class="contacts-name">Неопознанный енот</p>
+            <p><i>email:</i> <a href="mailto:enot_neopoznanniy@gmail.com">enot_neopoznanniy@gmail.com</a></p>
+            <p><i>телефон:</i> <a href="tel:+79876543210">+79876543210</a></p>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <p>© Новый год</p>
+            <p>2022</p>
+        </div>
+        <div id="clockNW"></div>
+        <script>NewYear();</script>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':true,'enableEscapeButton':true,'autoScale':true };
+
+    jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});};
+
+    jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+
+    var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+
+    var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+    jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+    jQuery(easy_fancybox_auto);
+    <script type='text/javascript' id='metaslider-flex-slider-js-after'>
+        var metaslider_115 = function ($) {
+            $('#metaslider_115').addClass('flexslider');
+            $('#metaslider_115').flexslider({
+                slideshowSpeed: 4600,
+                animation: "fade",
+                controlNav: false,
+                directionNav: true,
+                pauseOnHover: true,
+                direction: "horizontal",
+                reverse: false,
+                animationSpeed: 1000,
+                prevText: "&lt;",
+                nextText: "&gt;",
+                fadeFirstSlide: true,
+                slideshow: true
+            });
+            $(document).trigger('metaslider/initialized', '#metaslider_115');
+        };
+        var timer_metaslider_115 = function () {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_115, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_115, 1) : metaslider_115(window.jQuery);
+        };
+        timer_metaslider_115();
+    </script>
+
+    <script>
+        jQuery(function () {
+
+            jQuery('.post-3714 a, .post-2346 a, .post-5869 a, .post-3710 a, .post-5871 a').on('click', function (e) {
+                if (e && e.preventDefault) {
+                    e.preventDefault();
+                }
+                window.location = 'https://www.difymusic.com/carpenterbrut'
+                // var elem = document.createElement('a');
+                // elem.setAttribute('href', 'https://www.difymusic.com/carpenterbrut');
+                // elem.setAttribute('target', '_blank');
+                // elem.click();
+            });
+
+            jQuery('.main-animation').click(function () {
+                // jQuery('.main-animation').addClass('remove');
+                setTimeout(function () {
+                    jQuery(".main-animation").addClass("remove");
+                }, 1000);
+                jQuery('.leather-teeth-container').addClass('leather-teeth-container-remove');
+                /*jQuery('.home-video').addClass('home-video-on');*/
+                /*jQuery("#home-video").attr('src','https://www.youtube.com/embed/98DDgbtE-eU?playlist=98DDgbtE-eU&loop=1;autoplay=1&controls=0&showinfo=0&autohide=1&mute=1');*/
+            });
+
+        });
+    </script>
+</body>
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head>
+    <script>
+        function NewYear() {
+            var date = new Date();
+            var NewYearDate = new Date("Jan,01,2022,00:00:00");
+            var remaining = (NewYearDate.getTime() - date.getTime());
+            if (remaining > 1) {
+                var Secs = (parseInt(remaining / 1000)); // общее кол-во в секундах
+                var remainingDays = (parseInt(Secs / 86400)); // кол-во дней
+                var secPerDay = Secs - remainingDays * 86400; // остаток от вычтенных из всех секунд полных дней
+                var remainingHours = (parseInt(secPerDay / 3600)); // кол-во часов
+                if (remainingHours < 10) { remainingHours = "0" + remainingHours }; // проверка на два знака (Пример: 09:05 вместо 9:5)
+                var secPerHours = secPerDay - remainingHours * 3600; // Остаток от вычтенных из всех секунд часов
+                var remainingMins = (parseInt(secPerHours / 60)); // кол-во минут
+                if (remainingMins < 10) { remainingMins = "0" + remainingMins }; // проверка на два знака (Пример: 09:05 вместо 9:5)
+                var remainingSecs = secPerHours - remainingMins * 60; //
+                if (remainingSecs < 10) { remainingSecs = "0" + remainingSecs }; // проверка на два знака (Пример: 09: 05 вместо 9: 5)
+                /*
+
+                Робит! Не трогать
+
+                */
+            }
+            document.getElementById("clockNW").innerHTML = remainingDays + " days " + remainingHours + ":" + remainingMins + ":" + remainingSecs;
+            setTimeout("NewYear()", 10);
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+
+    <title>Дуэт из 427 представляет</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="No Quarter Prod &raquo; Feed" href="https://www.noquarterprod.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="No Quarter Prod &raquo; Comments Feed" href="https://www.noquarterprod.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/www.noquarterprod.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1" } };
+        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://www.noquarterprod.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://www.noquarterprod.com/content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=5.9.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-blocks-style-css' href='https://www.noquarterprod.com/content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=5.9.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='cpsh-shortcodes-css' href='https://www.noquarterprod.com/content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://www.noquarterprod.com/content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.2' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='parent-style-css' href='https://www.noquarterprod.com/content/themes/storefront/style.css?ver=5.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='storefront-style-css' href='https://www.noquarterprod.com/content/themes/storefront/style.css?ver=2.2.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='storefront-icons-css' href='https://www.noquarterprod.com/content/themes/storefront/assets/sass/base/icons.css?ver=2.2.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='storefront-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='cookie-notice-front-css' href='https://www.noquarterprod.com/content/plugins/cookie-notice/includes/../css/front.min.css?ver=5.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='fancybox-css' href='https://www.noquarterprod.com/content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24' type='text/css' media='screen' />
+    <link rel='stylesheet' id='storefront-woocommerce-style-css' href='https://www.noquarterprod.com/content/themes/storefront/assets/sass/woocommerce/woocommerce.css?ver=2.2.8' type='text/css' media='all' />
+    <style id='storefront-woocommerce-style-inline-css' type='text/css'>
+        .order_details > li {
+            border-bottom: 1px dotted #000000;
+        }
+
+        .order_details:before,
+        .order_details:after {
+            background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#050f12 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#050f12 33.33%,transparent 33.33%)
+        }
+
+        @media screen and ( min-width: 768px ) {
+        }
+    </style>
+    <link rel='stylesheet' id='storefront-child-style-css' href='https://www.noquarterprod.com/content/themes/noquarter/style.css?ver=5.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wos-styles-css' href='https://www.noquarterprod.com/content/plugins/woo-order-splitter/css/front-style.css?t=1639914289&#038;ver=1639914289' type='text/css' media='all' />
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/plugins/respondjs/js/respond.min.js?ver=1.4.2' id='respondjs-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script type='text/javascript' id='cookie-notice-front-js-extra'></script>
+    <script async type='text/javascript' src='https://www.noquarterprod.com/content/plugins/cookie-notice/includes/../js/front.min.js?ver=2.1.5' id='cookie-notice-front-js'></script>
+    <script type='text/javascript' id='wos_scripts-js-extra'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/plugins/woo-order-splitter/js/front-scripts.js?ver=1639914289' id='wos_scripts-js'></script>
+    <link rel="https://api.w.org/" href="https://www.noquarterprod.com/wp-json/" />
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <style type="text/css" id="wp-custom-css">
+
+        @media (min-width:970px) {
+            .home.woocommerce-active .site-header .site-header-cart {
+                font-size: 18px;
+                /*width:20%!important;*/
+            }
+        }
+
+        @media (min-width: 768px) {
+            .woocommerce-active .site-header .site-header-cart {
+                width: auto;
+            }
+
+            .woocommerce-active .site-header-cart .cart-contents:after {
+                padding-left: 8px;
+                right: 0;
+            }
+        }
+
+
+
+
+        .pum-close, .pum-theme-default-theme .pum-content + .pum-close {
+            position: absolute;
+            height: auto;
+            width: auto;
+            left: auto;
+            bottom: auto;
+            padding: 8px;
+            color: #ffffff;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 15px;
+            font-style: inherit;
+            line-height: 36px;
+            border: 1px none #ffffff;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .pum-theme-hello-box .pum-container {
+            padding: 30px;
+            border-radius: 50px;
+            border: 10px solid #ff0097;
+            box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 );
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body class="home archive post-type-archive post-type-archive-product custom-background theme-storefront woocommerce-shop woocommerce woocommerce-page woocommerce-no-js %e2%80%a0-leather-teeth-%e2%80%a0-yellow-clear-lp-%e2%80%a0 storefront-full-width-content right-sidebar woocommerce-active cookies-set cookies-refused">
+    <div class="main-animation" title="See you in Hell !">
+        <div class="leather-teeth-container">
+            <img class="leather-teeth" src="img/DedMorozBanner.png" alt="Дедушка мороз" />
+            <a class="logo-btn" href="/product-category/carpenter-brut/" title="Official Merch">Official Merch</a>
+            <a class="eye-btn" href="/about/" title="Carpenter Brut">Carpenter Brut</a>
+            <a class="jewel-btn" href="/the-dogs-of-doom/" title="The Dogs of Doom">The Dogs of Doom</a>
+        </div>
+        <img class="leather-teeth-title" src="img/HNY.png" alt="С новым годом!" />
+        <img class="star-1" src="content/themes/noquarter/assets/images/star-1.png" alt="Star" />
+        <img class="star-2" src="content/themes/noquarter/assets/images/star-2.png" alt="Star" />
+        <img class="star-3" src="content/themes/noquarter/assets/images/star-3.png" alt="Star" />
+        <img class="star-4" src="content/themes/noquarter/assets/images/star-1.png" alt="Star" />
+        <img class="star-5" src="content/themes/noquarter/assets/images/star-2.png" alt="Star" />
+        <img class="star-6" src="content/themes/noquarter/assets/images/star-3.png" alt="Star" />
+        <img class="fire-left" src="content/themes/noquarter/assets/images/fire-left.png" alt="Fire" />
+        <img class="fire-right" src="content/themes/noquarter/assets/images/fire-right.png" alt="Fire" />
     </div>
-  </header>
-  <main>
-      <section class="about container">
-          <h2 class="section-title">С новым, 2022 годом!</h2>
-          <div class="about-content">
-              <style>
-                  .lefting {
-                      float: left;
-                      margin: 7px 7px 7px 0;
-                  }
-              </style>
-              <p>
-                  <img src="img/DedMorozKrasota.jpg" class="about-image lefting"> Обычай отмечать Новый год в ночь с 31 декабря на 1 января появился в России при Петре I.
-                  До этого, с принятия христианства в 988 году, его отмечали 1 марта, а в 1492 году датой начала года закрепили 1 сентября. Тогда летоисчисление шло
-                  по византийской системе, «от сотворения мира» — то есть от 5508 года до нашей эры. В «первый день года» на соборной площади Московского Кремля проходила церемония
-                  «О начатии нового лета» и церковная служба «На летопровождение» при участии патриарха, царя, знати.
-              </p>
-              <p>
-                  В конце декабря 1699 года Петр I издал именной указ № 1736
-                  «О праздновании Нового года». Он ввел новую систему исчисления — от Рождества Христова,
-                  и 7208 год «от сотворения мира» стал 1700 годом. А Новый год указ предписывал праздновать
-                  по образу и подобию европейских держав, которые впечатлили царя во время Великого посольства в зарубежные страны.
-              </p>
-          </div>
-      </section>
-      <section class="status container">
-          <h2 class="section-title">Мой статус</h2>
-          <p>#яжверстальщик!</p>
-      </section>
-      <section class="contacts container">
-          <h2 class="section-title">По предложениям</h2>
-          <p class="contacts-name">Неопознанный енот</p>
-          <p><i>email:</i> <a href="mailto:enot_neopoznanniy@gmail.com">enot_neopoznanniy@gmail.com</a></p>
-          <p><i>телефон:</i> <a href="tel:+79876543210">+79876543210</a></p>
-      </section>
-  </main>
-  <footer class="page-footer">
-      <div class="container">
-          <p>© Новый год</p>
-          <p>2022</p>
-      </div>
-      <div id="clockNW"></div>
-      <script>NewYear();</script>
-  </footer>
+
+
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/www.noquarterprod.com"}}]},{"@context":"https:\/\/schema.org\/","@type":"WebSite","name":"No Quarter Prod","url":"https:\/\/www.noquarterprod.com","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.noquarterprod.com\/?s={search_term_string}&amp;post_type=product","query-input":"required name=search_term_string"}}]}</script>
+    <script type="text/javascript">
+        (function () {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <link rel='stylesheet' id='metaslider-flex-slider-css' href='https://www.noquarterprod.com/content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.23.0' type='text/css' media='all' property='stylesheet' />
+    <link rel='stylesheet' id='metaslider-public-css' href='https://www.noquarterprod.com/content/plugins/ml-slider/assets/metaslider/public.css?ver=3.23.0' type='text/css' media='all' property='stylesheet' />
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/plugins/easy-fancybox/js/jquery.easing.min.js?ver=1.4.1' id='jquery-easing-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13' id='jquery-mousewheel-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/themes/storefront/assets/js/woocommerce/header-cart.min.js?ver=2.2.8' id='storefront-header-cart-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/wp/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+    <script type='text/javascript' src='https://www.noquarterprod.com/content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.23.0' id='metaslider-flex-slider-js'></script>
+    <script type='text/javascript' id='metaslider-flex-slider-js-after'>
+        var metaslider_115 = function ($) {
+            $('#metaslider_115').addClass('flexslider');
+            $('#metaslider_115').flexslider({
+                slideshowSpeed: 4600,
+                animation: "fade",
+                controlNav: false,
+                directionNav: true,
+                pauseOnHover: true,
+                direction: "horizontal",
+                reverse: false,
+                animationSpeed: 1000,
+                prevText: "&lt;",
+                nextText: "&gt;",
+                fadeFirstSlide: true,
+                slideshow: true
+            });
+            $(document).trigger('metaslider/initialized', '#metaslider_115');
+        };
+        var timer_metaslider_115 = function () {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_115, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_115, 1) : metaslider_115(window.jQuery);
+        };
+        timer_metaslider_115();
+    </script>
+    <script>
+        jQuery(function () {
+
+            jQuery('.post-3714 a, .post-2346 a, .post-5869 a, .post-3710 a, .post-5871 a').on('click', function (e) { //Скорее всгео не надо
+                if (e && e.preventDefault) {
+                    e.preventDefault();
+                }
+                window.location = 'https://www.difymusic.com/carpenterbrut'
+            });
+
+            jQuery('.main-animation').click(function () {
+                setTimeout(function () {
+                    jQuery(".main-animation").addClass("remove");
+                }, 1000);
+                jQuery('.leather-teeth-container').addClass('leather-teeth-container-remove');
+            });
+
+        });
+    </script>
+
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Сайт Деда Мороза</h1>
+            <p><i>Напиши письмо деду морозу:</i><br><a href="mailto:Dima.Plenkin.03@mail.ru">Написать</a></p>
+        </div>
+    </header>
+    <main>
+        <section class="about container">
+            <h2 class="section-title">С новым, 2022 годом!</h2>
+            <div class="about-content">
+                <style>
+                    .lefting {
+                        float: left;
+                        margin: 7px 7px 7px 0;
+                    }
+                </style>
+                <p>
+                    <img src="img/DedMorozKrasota.jpg" class="about-image lefting"> Обычай отмечать Новый год в ночь с 31 декабря на 1 января появился в России при Петре I.
+                    До этого, с принятия христианства в 988 году, его отмечали 1 марта, а в 1492 году датой начала года закрепили 1 сентября. Тогда летоисчисление шло
+                    по византийской системе, «от сотворения мира» — то есть от 5508 года до нашей эры. В «первый день года» на соборной площади Московского Кремля проходила церемония
+                    «О начатии нового лета» и церковная служба «На летопровождение» при участии патриарха, царя, знати.
+                </p>
+                <p>
+                    В конце декабря 1699 года Петр I издал именной указ № 1736
+                    «О праздновании Нового года». Он ввел новую систему исчисления — от Рождества Христова,
+                    и 7208 год «от сотворения мира» стал 1700 годом. А Новый год указ предписывал праздновать
+                    по образу и подобию европейских держав, которые впечатлили царя во время Великого посольства в зарубежные страны.
+                </p>
+            </div>
+        </section>
+        <section class="status container">
+            <h2 class="section-title">Мой статус</h2>
+            <p>#яжверстальщик!</p>
+        </section>
+        <section class="contacts container">
+            <h2 class="section-title">По предложениям</h2>
+            <p class="contacts-name">Неопознанный енот</p>
+            <p><i>email:</i> <a href="mailto:enot_neopoznanniy@gmail.com">enot_neopoznanniy@gmail.com</a></p>
+            <p><i>телефон:</i> <a href="tel:+79876543210">+79876543210</a></p>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <p>© Новый год</p>
+            <p>2022</p>
+        </div>
+        <div id="clockNW"></div>
+        <script>NewYear();</script>
+    </footer>
 </body>
 </html>
