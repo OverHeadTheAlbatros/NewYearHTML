@@ -5,18 +5,26 @@
         function NewYear() {
             var date = new Date();
             var NewYearDate = new Date("Jan,01,2022,00:00:00");
-            var remaining = (NewYearDate.getTime()-now.getTime())
-            var hours = date.getHours();
-            var NewYearHours = NewYearDate.getHours();
-            var minutes = date.getMinutes();
-            var seconds = date.getSeconds();
-            var year = date.getYear();
-            //* добавление ведущих нулей */
-            if (hours < 10) hours = "0" + hours;
-            if (minutes < 10) minutes = "0" + minutes;
-            if (seconds < 10) seconds = "0" + seconds;
-            document.getElementById("id_clock").innerHTML = NewYearHours-hours; // + ":" + minutes + ":" + seconds ;
-            //setTimeout("digitalClock()", 1000);
+            var remaining = (NewYearDate.getTime() - date.getTime());
+            if (remaining > 1) {
+                var Secs = (parseInt(remaining / 1000)); // общее кол-во в секундах
+                var remainingDays = (parseInt(Secs / 86400)); // кол-во дней
+                var secPerDay = Secs - remainingDays * 86400; // остаток от вычтенных из всех секунд полных дней
+                var remainingHours = (parseInt(secPerDay / 3600)); // кол-во часов
+                if (remainingHours < 10) { remainingHours = "0" + remainingHours }; // проверка на два знака (Пример: 09:05 вместо 9:5)
+                var secPerHours = secPerDay - remainingHours * 3600; // Остаток от вычтенных из всех секунд часов
+                var remainingMins = (parseInt(secPerHours / 60)); // кол-во минут
+                if (remainingMins < 10) { remainingMins = "0" + remainingMins }; // проверка на два знака (Пример: 09:05 вместо 9:5)
+                var remainingSecs = secPerHours - remainingMins * 60; // 
+                if (remainingSecs < 10) { remainingSecs = "0" + remainingSecs }; // проверка на два знака (Пример: 09: 05 вместо 9: 5)
+                /*
+                
+                Робит! Не трогать
+
+                */
+            }
+            document.getElementById("clockNW").innerHTML = remainingDays + " days " + remainingHours + ":" + remainingMins + ":" + remainingSecs;
+            setTimeout("NewYear()", 10);
         }
     </script>
     <meta charset="utf-8">
@@ -71,8 +79,8 @@
           <p>© Новый год</p>
           <p>2022</p>
       </div>
-      <div id="id_clock"></div>
-      <script>digitalClock();</script>
+      <div id="clockNW"></div>
+      <script>NewYear();</script>
   </footer>
 </body>
 </html>
