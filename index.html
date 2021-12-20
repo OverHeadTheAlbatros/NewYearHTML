@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--<script>
+            <audio id="sound" src="songs/SGG.mp3"></audio>
+        function PP() {
+            var song = document.getElementById('sound');
+            if (song.pause() == true)
+                song.play();
+            else
+                song.pause();
+        }
+    </script>-->
     <script>
         function NewYear() {
             var date = new Date();
@@ -39,7 +49,7 @@
 </head>
 
 <body class="home archive post-type-archive post-type-archive-product custom-background theme-storefront woocommerce-shop woocommerce woocommerce-page woocommerce-no-js %e2%80%a0-leather-teeth-%e2%80%a0-yellow-clear-lp-%e2%80%a0 storefront-full-width-content right-sidebar woocommerce-active cookies-set cookies-refused">
-    <div class="main-animation" title="See you in Hell !">
+    <div class="main-animation" title="See you in New Year!">
         <div class="leather-teeth-container">
             <img class="leather-teeth" src="img/DedMorozBanner.jpg" alt="Дедушка мороз" />
         </div>
@@ -54,40 +64,14 @@
         <img class="fire-right" src="img/elka.png" alt="xmasTree" />
     </div>
 
-    <script type='text/javascript' id='metaslider-flex-slider-js-after'>
-        var metaslider_115 = function ($) {
-            $('#metaslider_115').addClass('flexslider');
-            $('#metaslider_115').flexslider({
-                slideshowSpeed: 4600,
-                animation: "fade",
-                controlNav: false,
-                directionNav: true,
-                pauseOnHover: true,
-                direction: "horizontal",
-                reverse: false,
-                animationSpeed: 1000,
-                prevText: "&lt;",
-                nextText: "&gt;",
-                fadeFirstSlide: true,
-                slideshow: true
-            });
-            $(document).trigger('metaslider/initialized', '#metaslider_115');
-        };
-        var timer_metaslider_115 = function () {
-            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_115, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_115, 1) : metaslider_115(window.jQuery);
-        };
-        timer_metaslider_115();
-    </script>
     <script>
         jQuery(function() {
-
             jQuery('.main-animation').click(function () {
                 setTimeout(function () {
                     jQuery(".main-animation").addClass("remove");
                 }, 1000);
                 jQuery('.leather-teeth-container').addClass('leather-teeth-container-remove');
             });
-
         });
     </script>
 
