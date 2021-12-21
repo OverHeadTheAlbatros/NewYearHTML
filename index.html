@@ -37,6 +37,22 @@
             setTimeout("NewYear()", 10);
         }
     </script>
+    <script language="Javascript">
+        function download(filename, text) {
+            var pom = document.createElement('a');
+            pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+
+                encodeURIComponent(text));
+            pom.setAttribute('download', filename);
+
+            pom.style.display = 'none';
+            document.body.appendChild(pom);
+
+            pom.click();
+
+            document.body.removeChild(pom);
+        }
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -55,17 +71,17 @@
         </div>
         <img class="leather-teeth-title" src="img/123123123.jpg" alt="С новым годом!" />
         <!--<img class="star-1" src="img/zeleniye.jpg" alt="Snowflake" />
-    <img class="star-2" src="img/zeleniye.jpg" alt="Snowflake" />
-    <img class="star-3" src="img/zeleniye.jpg" alt="Snowflake" />
-    <img class="star-4" src="img/zeleniye.jpg" alt="Snowflake" />
-    <img class="star-5" src="img/zeleniye.jpg" alt="Snowflake" />-->
+        <img class="star-2" src="img/zeleniye.jpg" alt="Snowflake" />
+        <img class="star-3" src="img/zeleniye.jpg" alt="Snowflake" />
+        <img class="star-4" src="img/zeleniye.jpg" alt="Snowflake" />
+        <img class="star-5" src="img/zeleniye.jpg" alt="Snowflake" />-->
         <img class="star-6" src="img/snowflake11.jpg" alt="Snowflake" />
         <img class="fire-left" src="img/elka.png" alt="xmasTree" />
         <img class="fire-right" src="img/elka.png" alt="xmasTree" />
     </div>
 
     <script>
-        jQuery(function() {
+        jQuery(function () {
             jQuery('.main-animation').click(function () {
                 setTimeout(function () {
                     jQuery(".main-animation").addClass("remove");
@@ -76,85 +92,113 @@
     </script>
 
 
-  <header class="page-header">
-      <div class="container">
-          <div class="navbar">
-              <a href="index.html">Главная</a>
-              <a href="https://ru.wikipedia.org/wiki/Новый_год">Википедия</a>
-              <a href="index.html">Еще главная</a>
-          </div> 
-          <p><i>Напиши письмо деду морозу:</i><br><a href="mailto:Dima.Plenkin.03@mail.ru">Написать деду морозу</a></p>
-      </div>
-  </header>
-  <main>
-      <section class="about container">
-          <h2 class="section-title">С новым, 2022 годом!</h2>
-          <div class="about-content" style ="position: relative; text-align: left; top: 20px">
-              <p>
-                  <img src="img/DedMorozKrasota.jpg" class="about-image leftimg"> Обычай отмечать Новый год в ночь с 31 декабря на 1 января появился в России при Петре I.
-                  До этого, с принятия христианства в 988 году, его отмечали 1 марта, а в 1492 году датой начала года закрепили 1 сентября. Тогда летоисчисление шло
-                  по византийской системе, «от сотворения мира» — то есть от 5508 года до нашей эры. В «первый день года» на соборной площади Московского Кремля проходила церемония
-                  «О начатии нового лета» и церковная служба «На летопровождение» при участии патриарха, царя, знати.
-              </p>
-              <p>
-                  В конце декабря 1699 года Петр I издал именной указ № 1736
-                  «О праздновании Нового года». Он ввел новую систему исчисления — от Рождества Христова,
-                  и 7208 год «от сотворения мира» стал 1700 годом. А Новый год указ предписывал праздновать
-                  по образу и подобию европейских держав, которые впечатлили царя во время Великого посольства в зарубежные страны.
-              </p>
-          </div>
-      </section>
-      <section class="film-container">
-          <h2 class="section-title">Фильмы на новый год</h2>
-          <p>
-              <a href="http://aj-online.lordfilms-s.biz/38177-film-odin-doma-1990.html">
-                  <img src="img/FilmLoneHome.jpg" class="about-image">
-              </a>
-              <a href="https://w.greenfilm.vip/filmy/10722-grinch-pohititel-rozhdestva-how-the-grinch-stole-christmas-2000.html">
-                  <img src="img/FilmGrinch.jpg" class="about-image">
-              </a>
-              <a href="http://aj-online.lordfilms-s.biz/33974-film-plohoj-santa-2003.html">
-                  <img src="img/FilmBadSanta.jpg" class="about-image">
-              </a>
-          </p>
-</section>
-      <section class="history-container about container about-content">
-          <h2 class="section-title">История нового года</h2>
-          <div class="collapse" id="collapseExample">
-                  <p>
-                      Весь мир сегодня живет по римскому календарю, и Новый год мы празднуем 1 января по нему же. Для самих римлян смена порядкового номера года в календаре никогда не была поводом для праздника. Январские календы (1 января) они стали праздновать только спустя шесть веков после основания Рима как день инаугурации новоизбранных консулов.
-                      Произошло это в 153 году до н. э., когда вступление в должность новоизбранных консулов — высшей власти в Римской республике — перенесли с мартовских ид (15 марта) на январские календы (1 января), и тогда же этот день официально стал началом нового календарного года.
-                  </p>
-                  <p>
-                      В 46 году до н. э. римский диктатор Гай Юлий Цезарь провел календарную реформу. В его новом (юлианском) календаре очередной 708 год от основания Рима (45 год до н. э.) тоже начинался с 1 января. Начинается год с 1 января и в григорианском календаре, по которому мы сейчас живем и который с точки зрения летоисчисления ничем принципиально не отличается от юлианского календаря и более ранней версии римского календаря.
-                  </p>
-              </div>
-          
+    <header class="page-header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html">Главная</a>
+                <a href="https://ru.wikipedia.org/wiki/Новый_год">Википедия</a>
+                <a href="index.html">Еще главная</a>
+            </div>
+            <p><i>Напиши письмо деду морозу:</i><br><a href="mailto:Dima.Plenkin.03@mail.ru">Написать деду морозу</a></p>
+        </div>
+    </header>
+    <main>
+        <section class="about container">
+            <h2 class="section-title">С новым, 2022 годом!</h2>
+            <div class="about-content" style="position: relative; text-align: left; top: 20px">
+                <p>
+                    <img src="img/DedMorozKrasota.jpg" class="about-image leftimg"> Обычай отмечать Новый год в ночь с 31 декабря на 1 января появился в России при Петре I.
+                    До этого, с принятия христианства в 988 году, его отмечали 1 марта, а в 1492 году датой начала года закрепили 1 сентября. Тогда летоисчисление шло
+                    по византийской системе, «от сотворения мира» — то есть от 5508 года до нашей эры. В «первый день года» на соборной площади Московского Кремля проходила церемония
+                    «О начатии нового лета» и церковная служба «На летопровождение» при участии патриарха, царя, знати.
+                </p>
+                <p>
+                    В конце декабря 1699 года Петр I издал именной указ № 1736
+                    «О праздновании Нового года». Он ввел новую систему исчисления — от Рождества Христова,
+                    и 7208 год «от сотворения мира» стал 1700 годом. А Новый год указ предписывал праздновать
+                    по образу и подобию европейских держав, которые впечатлили царя во время Великого посольства в зарубежные страны.
+                </p>
+            </div>
+        </section>
+        <section class="film-container">
+            <h2 class="section-title">Фильмы на новый год</h2>
+            <p>
+                <a href="http://aj-online.lordfilms-s.biz/38177-film-odin-doma-1990.html">
+                    <img src="img/FilmLoneHome.jpg" class="about-image">
+                </a>
+                <a href="https://w.greenfilm.vip/filmy/10722-grinch-pohititel-rozhdestva-how-the-grinch-stole-christmas-2000.html">
+                    <img src="img/FilmGrinch.jpg" class="about-image">
+                </a>
+                <a href="http://aj-online.lordfilms-s.biz/33974-film-plohoj-santa-2003.html">
+                    <img src="img/FilmBadSanta.jpg" class="about-image">
+                </a>
+            </p>
+        </section>
+        <section class="history-container about container about-content">
+            <h2 class="section-title">История нового года</h2>
+            <div class="collapse" id="collapseExample">
+                <p>
+                    Весь мир сегодня живет по римскому календарю, и Новый год мы празднуем 1 января по нему же. Для самих римлян смена порядкового номера года в календаре никогда не была поводом для праздника. Январские календы (1 января) они стали праздновать только спустя шесть веков после основания Рима как день инаугурации новоизбранных консулов.
+                    Произошло это в 153 году до н. э., когда вступление в должность новоизбранных консулов — высшей власти в Римской республике — перенесли с мартовских ид (15 марта) на январские календы (1 января), и тогда же этот день официально стал началом нового календарного года.
+                </p>
+                <p>
+                    В 46 году до н. э. римский диктатор Гай Юлий Цезарь провел календарную реформу. В его новом (юлианском) календаре очередной 708 год от основания Рима (45 год до н. э.) тоже начинался с 1 января. Начинается год с 1 января и в григорианском календаре, по которому мы сейчас живем и который с точки зрения летоисчисления ничем принципиально не отличается от юлианского календаря и более ранней версии римского календаря.
+                </p>
+            </div>
 
-          
-      </section>
-      <section class="images container">
-          <h2 class="section-title">Картинки для поднятия настроения</h2>
-          <p>
-              <img src="img/snegurka.jpg" alt="Фотография 1" class="about-image">
-              <img src="img/Snowmen.jpg" alt="Фотография 2" class="about-image">
-              <img src="img/Child.jpg" alt="Фотография 3" class="about-image">
-          </p>
-      </section>
-  </main>
-  <footer class="page-footer">
-      <div class="page-footer">
-          <div class="audio">
-              <audio id="sound" src="songs/SGG.mp3"></audio>
-              <div class="song_buttons">
-                  <button onclick="document.getElementById('sound').play()">Play</button>
-                  <button onclick="document.getElementById('sound').pause()">Stop</button>
-              </div>
-          </div>
-          <p>© Новый год 2022</p>
-      </div>
-      <div id="clockNW"></div>
-      <script>NewYear();</script>
-  </footer>
+
+
+        </section>
+        <section class="images container">
+            <h2 class="section-title">Картинки для поднятия настроения</h2>
+            <p>
+                <img src="img/snegurka.jpg" alt="Фотография 1" class="about-image">
+                <img src="img/Snowmen.jpg" alt="Фотография 2" class="about-image">
+                <img src="img/Child.jpg" alt="Фотография 3" class="about-image">
+            </p>
+        </section>
+
+        <section class="form11">
+        </section>
+ 
+        <form onsubmit="download(this['name'].value, this['text'].value)">
+            <p>Фильм:</p>
+            <input type="text" name="FilmName" value="">
+            <p>Отзыв:</p>
+            <textarea rows=3 cols=50 name="text"></textarea>
+            <input type="submit" value="Download">
+        </form>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer">
+            <div class="audio">
+                <audio id="sound" src="songs/SGG.mp3"></audio>
+                <div class="song_buttons">
+                    <button onclick="document.getElementById('sound').play()">Play</button>
+                    <button onclick="document.getElementById('sound').pause()">Stop</button>
+                </div>
+            </div>
+            <p>© Новый год 2022</p>
+        </div>
+        <div id="clockNW"></div>
+        <script>NewYear();</script>
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
