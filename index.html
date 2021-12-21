@@ -34,7 +34,7 @@
                 */
             }
             document.getElementById("clockNW").innerHTML = "До Нового Года осталось: " + remainingDays + " days " + remainingHours + ":" + remainingMins + ":" + remainingSecs;
-            setTimeout("NewYear()", 10);
+            setTimeout("NewYear()", 100);
         }
     </script>
     <script language="Javascript">
@@ -163,10 +163,10 @@
  
         <form onsubmit="download(this['name'].value, this['text'].value)">
             <p>Фильм:</p>
-            <input type="text" name="FilmName" value="">
+            <input type="text" name="name" value="">
             <p>Отзыв:</p>
             <textarea rows=3 cols=50 name="text"></textarea>
-            <input type="submit" value="Download">
+            <input type="submit" value="Отправить">
         </form>
     </main>
     <footer class="page-footer">
