@@ -3,8 +3,9 @@
 }
 
 .container {
-    padding-top: 10px;
-    margin: 0 auto;
+    padding-top: 1px;
+    margin: 0;
+    width: 100%;
 }
 
 .page {
@@ -17,9 +18,12 @@
     font-size: 15px;
     line-height: 40px;
     color: #333333;
-    background-color: #eae9f2;
+    background-color: #c4ed4d;
 }
-
+.leftimg {
+    float: left; /* Ãƒâ€šÃƒÂ»ÃƒÂ°ÃƒÂ ÃƒÂ¢ÃƒÂ­ÃƒÂ¨ÃƒÂ¢ÃƒÂ ÃƒÂ­ÃƒÂ¨ÃƒÂ¥ ÃƒÂ¯ÃƒÂ® ÃƒÂ«ÃƒÂ¥ÃƒÂ¢ÃƒÂ®ÃƒÂ¬ÃƒÂ³ ÃƒÂªÃƒÂ°ÃƒÂ ÃƒÂ¾ */
+    margin: 7px 7px 7px 0; /* ÃƒÅ½ÃƒÂ²ÃƒÂ±ÃƒÂ²ÃƒÂ³ÃƒÂ¯ÃƒÂ» ÃƒÂ¢ÃƒÂ®ÃƒÂªÃƒÂ°ÃƒÂ³ÃƒÂ£ ÃƒÂªÃƒÂ ÃƒÂ°ÃƒÂ²ÃƒÂ¨ÃƒÂ­ÃƒÂªÃƒÂ¨ */
+}
 .section-title {
     width: 100%;
     margin: 0;
@@ -28,10 +32,11 @@
     font-weight: bold;
     font-size: 25px;
     line-height: 20px;
+    text-align: center;
 }
 
 a {
-    color: #e15d7f;
+    color: #e15d5d;
 }
 
     a:focus {
@@ -50,7 +55,7 @@ a {
 }
 .page-header {
     margin-bottom: 40px;
-    color: #333333;
+    color: #ffffff;
     background-color: #ffffff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
@@ -80,7 +85,7 @@ a {
 .about {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .about-image {
@@ -90,16 +95,16 @@ a {
 }
 
 .about-content {
-    width: 410px;
+    width: auto;
     font-size: 14px;
-    line-height: 24px;
-    border-radius: 15%;
+    line-height: 21px;
+    
 }
 
     .about-content p {
-        margin: 0;
-        margin-bottom: 12px;
-        padding: 0;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0px;
     }
 
 .film {
@@ -144,7 +149,12 @@ p.history-name {
     font-weight: bold;
     line-height: 20px;
 }
+.collapse{
 
+}
+.btn btn-primary{
+
+}
 .history a {
     font-size: 16px;
     line-height: 24px;
